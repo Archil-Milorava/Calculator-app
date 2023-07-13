@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Calculator app by Archil Milorava</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="main_div">
+      <div class="head">
+        <h2>calc</h2>
+        <div class="toggle_div">
+          <div class="toggle_main">
+            <input class="move" type="checkbox" id="toggle" />
+            <label for="toggle" for="toggle2" class="slide"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="input_field"></div>
+
+      <div class="Calculator_div">
+        <button onclick="appendOperatoin(7)" type="button" class="btn number">
+          7
+        </button>
+        <button onclick="appendOperatoin(8)" type="button" class="btn number">
+          8
+        </button>
+        <button onclick="appendOperatoin(9)" type="button" class="btn number">
+          9
+        </button>
+        <button onclick="delteLast()" type="button" class="btn del">DEL</button>
+        <button onclick="appendOperatoin(4)" type="button" class="btn number">
+          4
+        </button>
+        <button onclick="appendOperatoin(5)" type="button" class="btn number">
+          5
+        </button>
+        <button onclick="appendOperatoin(6)" type="button" class="btn number">
+          6
+        </button>
+        <button onclick="appendOperatoin(' + ')" type="button" class="btn plus">
+          +
+        </button>
+        <button onclick="appendOperatoin(1)" type="button" class="btn number">
+          1
+        </button>
+        <button onclick="appendOperatoin(2)" type="button" class="btn number">
+          2
+        </button>
+        <button onclick="appendOperatoin(3)" type="button" class="btn number">
+          3
+        </button>
+        <button
+          onclick="appendOperatoin(' - ')"
+          type="button"
+          class="btn minuse"
+        >
+          -
+        </button>
+        <button onclick="appendOperatoin('.')" type="button" class="btn dec">
+          .
+        </button>
+        <button onclick="appendOperatoin(0)" type="button" class="btn number">
+          0
+        </button>
+        <button
+          onclick="appendOperatoin(' / ')"
+          type="button"
+          class="btn devide"
+        >
+          /
+        </button>
+        <button
+          onclick="appendOperatoin(' * ')"
+          type="button"
+          class="btn multiple"
+        >
+          x
+        </button>
+      </div>
+      <div class="two">
+        <button onclick="resetResult()" type="button" class="reset">
+          RESET
+        </button>
+        <button onclick="calculate()" type="button" class="equal">=</button>
+      </div>
+    </div>
+  </body>
+</html>
