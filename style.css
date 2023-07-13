@@ -188,3 +188,17 @@ justify-content: center;
 margin-top: 2rem;
 grid-gap: 0.5rem;
 }
+
+.author{
+    margin-top: 1rem;
+    color: var(--black-and-white);
+    font-size: 16px;
+    font-family: none;
+}
+
+.author2{
+    color: var(--clr-blue-green);
+    text-decoration: none;
+    margin-left: 0.5rem;
+    font-size: 17px;
+}
